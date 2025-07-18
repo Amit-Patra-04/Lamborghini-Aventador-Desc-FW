@@ -98,3 +98,41 @@ document.addEventListener("DOMContentLoaded", () => {
   showSlide(currentSlide); 
 });
 
+// Power Distribution: Stacked Bar Chart
+const powerDistCtx = document.getElementById('powerDistChart').getContext('2d');
+new Chart(powerDistCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Strada', 'Sport', 'Corsa', 'Hard Cornering', 'Wet Conditions'],
+    datasets: [
+      {
+        label: 'Front Axle',
+        data: [30, 20, 10, 40, 55],
+        backgroundColor: '#4fc3f7'
+      },
+      {
+        label: 'Rear Axle',
+        data: [70, 80, 90, 60, 45],
+        backgroundColor: '#f9a825'
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { labels: { color: '#fff' } }
+    },
+    scales: {
+      x: {
+        stacked: true,
+        ticks: { color: '#ccc' }
+      },
+      y: {
+        stacked: true,
+        ticks: { color: '#ccc' },
+        title: { display: true, text: 'Distribution (%)', color: '#ccc' },
+        max: 100
+      }
+    }
+  }
+});
