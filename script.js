@@ -136,3 +136,39 @@ new Chart(powerDistCtx, {
     }
   }
 });
+
+// Acceleration Curve
+const accelCtx = document.getElementById('accelChart').getContext('2d');
+new Chart(accelCtx, {
+  type: 'line',
+  data: {
+    labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    datasets: [{
+      label: 'Speed (km/h)',
+      data: [0, 45, 90, 130, 170, 210, 240, 260, 275, 285, 295],
+      borderColor: '#4fc3f7',
+      backgroundColor: 'rgba(79,195,247,0.2)',
+      borderWidth: 3,
+      tension: 0.4,
+      fill: true
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { labels: { color: '#fff' } }
+    },
+    scales: {
+      x: {
+        ticks: { color: '#ccc' },
+        title: { display: true, text: 'Time (s)', color: '#ccc' }
+      },
+      y: {
+        ticks: { color: '#ccc' },
+        title: { display: true, text: 'Speed (km/h)', color: '#ccc' },
+        min: 0,
+        max: 300
+      }
+    }
+  }
+});
