@@ -722,3 +722,61 @@ body {
     margin-bottom: 2rem;
   }
 }
+
+/* ALA Section */
+
+.ala-section {
+  padding: 6rem 0;
+  background: #0f0f0f;
+}
+
+.ala-header {
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+}
+
+.ala-header h2 {
+  font-size: 2.2rem;
+  color: #f9a825;
+  margin-bottom: 0.5rem;
+}
+
+.ala-header p {
+  color: #aaa;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ala-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.ala-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ala-card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.ala-card h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.ala-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.6;
+}
