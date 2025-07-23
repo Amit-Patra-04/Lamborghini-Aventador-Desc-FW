@@ -780,3 +780,24 @@ body {
   color: #ccc;
   line-height: 1.6;
 }
+
+.ala-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 768px) {
+  .ala-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ala-image {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .ala-features {
+    order: 2;
+  }
+}
