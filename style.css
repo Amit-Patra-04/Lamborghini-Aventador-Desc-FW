@@ -850,3 +850,16 @@ body {
   color: #ccc;
   line-height: 1.4;
 }
+
+/* Responsive (2 column on tablet, 1 on mobile) */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
