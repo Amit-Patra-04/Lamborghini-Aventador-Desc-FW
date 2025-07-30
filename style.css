@@ -936,3 +936,60 @@ body {
   background-color: #e8a012;
   color: #000;
 }
+
+.footer-divider {
+  height: 2px;
+  background: linear-gradient(to right, #e8a012 0%, #1c2331 100%);
+  margin: 2.5rem 0 1.5rem;
+}
+
+.footer-bottom {
+  margin-right: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: #888;
+  padding-bottom: 1rem;
+}
+
+.footer-bottom P i{
+  color: red;
+}
+
+.footer-bottom p a{
+  color: white;
+  text-decoration: none;
+}
+
+.legal-links a {
+  color: #888;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.legal-links a:hover {
+  color: #e8a012;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #e8a012;
+  color: black;
+  border: none;
+  padding: 12px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background-color: #ffb300;
+}
