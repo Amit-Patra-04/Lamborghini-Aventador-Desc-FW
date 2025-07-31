@@ -993,3 +993,19 @@ body {
 .scroll-to-top:hover {
   background-color: #ffb300;
 }
+
+/* Responsive layout fix */
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .legal-links a {
+    margin-left: 1rem;
+  }
+}
+
+
+
